@@ -4,10 +4,11 @@ cd ~
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-/usr/bin/pipewire &
-/usr/bin/pipewire-pulse &
+pkill -f /usr/bin/pipewire & 
+pkill -f /usr/bin/pipewire-pulse &
+pkill -f /usr/bin/wireplumber 
+
+/usr/bin/pipewire &  
+/usr/bin/pipewire-pulse &  
 /usr/bin/wireplumber &
-
-echo "Hello world"
-
 exec Hyprland
