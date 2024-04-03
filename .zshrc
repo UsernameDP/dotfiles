@@ -104,3 +104,4 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # Adding ~/.local/bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
+export ANDROID_HOME=~/Android/Sdk
